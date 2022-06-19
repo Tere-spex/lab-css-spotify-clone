@@ -6,13 +6,76 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Spotify Clone</title>
     <!-- don't forget to link your styles -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    Premium Discover Help Download Music for everyone. Spotify is now free on mobile, tablet and computer. Listen to the
-    right music, wherever you are. What’s on Spotify? Millions of Songs There are millions of songs on Spotify HD Music
-    Listen to music as if you were listening live Stream Everywhere Stream music on your smartphone, tablet or computer
-    It’s as yeezy as Kanye West. Search Know what you want to listen to? Just search and hit play. Browse Check out the
-    latest charts, brand new releases and great playlists for right now. Discover Enjoy new music every Monday with your
-    own personal playlist. Or sit back and enjoy Radio.
+    <header>
+      <div class="grid grid-cols-2 bg-white">
+       <div class="p-5">
+        <img class="w-32" src="/images/spotify-logo.png" alt="spotify-logo">
+       </div>
+        <nav class="p-5">
+          <ul class="flex justify-end text-black gap-8">
+            <li>Premium</li>
+            <li>Discover</li>
+            <li>Help</li>
+            <li>Download</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="grid justify-center content-center text-center h-screen bg-[url('/images/landing.jpg')] bg-no-repeat bg-center bg-cover text-white gap-9">
+      <h1 class="text-7xl">Music for everyone.</h1>
+      <p>Spotify is now free on mobile, tablet and computer. <br> Listen to the right music, wherever you are.</p>
+    </section>
+    <section>
+      <div class="flex justify-center p-5">
+        <h2 class="text-2xl font-bold">What’s on Spotify?</h2>
+      </div>
+      <article class="grid grid-cols-3 gap-8 p-5">
+        <div class="grid justify-center content-center p-9 text-center">
+          <div class="m-auto">
+            <img class="w-24" src="/images/music-icon.png" alt="music-icon">
+          </div>
+          <h3 class="text-green-500 text-2xl font-bold"> Millions of Songs</h3>
+          <p>There are millions of <br> songs on Spotify</p>
+        </div>
+        <div class="grid justify-center content-center p-9 text-center">
+          <div class="flex m-auto">
+            <img class="w-24" src="/images/high-quality-icon.png" alt="high-quality-icon">
+          </div>
+          <h3 class="text-green-500 text-2xl font-bold">HD Music</h3>
+          <p>Listen to music as if you <br> were listening live</p>
+        </div>
+        <div class="grid justify-center content-center p-9 text-center">
+          <div class="flex m-auto">
+            <img class="w-24" src="/images/devices-icon.png" alt="devices-icon">
+          </div>
+          <h3 class="text-green-500 text-2xl font-bold">Stream Everywhere</h3>
+          <p>Stream music on your <br> smartphone, tablet or computer</p>
+        </div>
+      </article>
+    </section>
+    <footer class="grid grid-cols-2 bg-green-500 text-white px-32 py-9 relative">
+     <div class="p-9">
+        <h4 class="font-bold text-3xl underline pb-9">It’s as yeezy as Kanye West.</h4>
+        <div class="pb-9">
+          <h5 class="font-bold text-3xl">Search</h5>
+          <p class="text-xl">Know what you want to listen to? <br> Just search and hit play.</p>
+        </div>
+        <div class="pb-9">
+          <h5 class="font-bold text-3xl">Search</h5>
+          <p  class="text-xl">Check out the latest charts, <br> brand new releases and great <br> playlists for right now.</p>
+        </div>
+        <div>
+          <h5 class="font-bold text-3xl">Search</h5>
+          <p  class="text-xl">Enjoy new music every Monday <br> with your own personal playlist. <br> Or sit back and enjoy Radio.</p>
+        </div>
+     </div>
+     <div class="m-auto my-14">
+      <img class="w-80" src="/images/spotify-app.jpg" alt="spotify-app">
+      <img class="w-32 absolute top-[45%] left-[45%]" src="/images/spotify-icon-white.png" alt="">
+     </div>
+    </footer>
   </body>
 </html>
